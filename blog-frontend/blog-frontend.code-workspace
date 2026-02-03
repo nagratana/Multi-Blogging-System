@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../blog-api"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "blog-frontend",
+		"liveServer.settings.port": 5501
+	}
+}

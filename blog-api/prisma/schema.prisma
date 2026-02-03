@@ -1,0 +1,51 @@
+// 1. Connect to the DB
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// 2. The User Model
+model User {
+  id        Int       @id @default(autoincrement())
+  email     String    @unique
+  password  String
+  name      String?
+  posts     Post[]    // A user can have many posts
+  comments  Comment[] // A user can have many comments
+}
+
+// 3. The Post Model
+model Post {
+  id        Int       @id @default(autoincrement())
+  title     String
+  content   String
+  authorId  Int
+  author    User      @relation(fields: [authorId], references: [id])
+  comments  Comment[] // A post has many comments
+  createdAt DateTime  @default(now())
+}
+
+// 4. The Nested Comment Model (The Logic Challenge)
+model Comment {
+  id        Int      @id @default(autoincrement())
+  content   String
+  
+  // Relationship to the User who wrote it
+  authorId  Int
+  author    User     @relation(fields: [authorId], references: [id])
+
+  // Relationship to the Post it belongs to
+  postId    Int
+  post      Post     @relation(fields: [postId], references: [id])
+
+  // SELF-RELATION: This allows nested comments!
+  parentId  Int?     // Can be null (top-level comment) or have a number (reply)
+  parent    Comment? @relation("CommentReplies", fields: [parentId], references: [id])
+  children  Comment[] @relation("CommentReplies") // The replies to this comment
+
+  createdAt DateTime @default(now())
+}
