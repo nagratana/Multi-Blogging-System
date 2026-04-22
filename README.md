@@ -1,10 +1,10 @@
-📝 Blog Project – Full Stack Application
+ Blog Project – Full Stack Application
 
 A full-stack blog application built using modern web technologies, allowing users to create, view, and manage blog posts through a clean frontend interface and a scalable backend API.
 
 This project demonstrates real-world full-stack development with proper separation of concerns, database integration, and modern tooling.
 
-🚀 Features
+ Features
 
 Create, read, update, and delete blog posts (CRUD)
 
@@ -18,7 +18,7 @@ Clean and responsive frontend built with Vite
 
 Scalable project structure (frontend & backend separated)
 
-🛠 Tech Stack
+ Tech Stack
 Frontend
 
 Vite
@@ -51,12 +51,12 @@ VS Code
 
 ESLint
 
-⚙️ Setup Instructions
+️ Setup Instructions
 1️⃣ Clone the repository
 git clone https://github.com/nagratana/blog-project.git
 cd blog-project
 
-🔧 Backend Setup (blog-api)
+ Backend Setup (blog-api)
 cd blog-api
 npm install
 
@@ -78,7 +78,7 @@ Backend will run on:
 
 http://localhost:3000
 
-🎨 Frontend Setup (blog-frontend)
+ Frontend Setup (blog-frontend)
 cd blog-frontend
 npm install
 npm run dev
@@ -88,7 +88,7 @@ Frontend will run on:
 
 http://localhost:5173
 
-📌 Future Enhancements
+ Future Enhancements
 
 User authentication (JWT)
 
@@ -100,7 +100,7 @@ Image upload support
 
 Deployment (Render / Railway / Vercel)
 
-🎓 Project Purpose
+ Project Purpose
 
 This project was developed as a college mini project to gain hands-on experience in:
 
@@ -114,12 +114,12 @@ Frontend–backend integration
 
 Git & GitHub workflows
 
-👤 Author
+ Author
 
 Nagratana
 CSE – Data Science
-India 🇮🇳
+India 
 
 GitHub: https://github.com/nagratana
 
-⭐ If you like this project, don’t forget to star the repo!
+ If you like this project, don’t forget to star the repo!
