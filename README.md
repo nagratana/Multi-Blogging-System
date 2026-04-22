@@ -51,8 +51,8 @@ VS Code
 
 ESLint
 
-️ Setup Instructions
-1️⃣ Clone the repository
+ Setup Instructions
+1⃣ Clone the repository
 git clone https://github.com/nagratana/blog-project.git
 cd blog-project
 
